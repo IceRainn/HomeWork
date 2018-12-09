@@ -1,0 +1,136 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>主页</title>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<!-- <meta name="keywords" content="" /> -->
+<embed src="BGM/28.m4a" autostart="true" loop="true" hidden="true"></embed>
+<!-- Default-JavaScript-File -->
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- //Default-JavaScript-File -->
+
+<!-- default-css-files -->
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/circles.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- default-css-files -->
+
+<!-- style.css-file -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- //style.css-file -->
+
+<link href="http://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <script>
+    function Get_Time()
+    {
+        var curday=new Date();
+    hours=curday.getHours();
+    alert("现在是"+hours+"点");
+    if (hours<=12) 
+    {
+        alert("上午好");
+    }
+    else if (hours<=18)
+    {
+        alert("下午好");
+    }
+    else  
+    {
+        alert("晚上好");
+    }
+
+    }
+    </script>
+    <script>
+    window.onload=function()
+    {
+        alert("本网页一些功能需要使用 Bootstrap功能，由于时间不足尚未系统学习，所以一些功能使用了现有的JS");
+        alert("Bootstrap提供现成的一些style，字体，JS，很方便的可以制作各种响应式效果");
+    }
+    </script>
+</head>
+<style>
+    .ddd{position: relative;display: inline;}
+ .giff{width: 200px;height: 180px;}
+</style>
+<body>
+ 
+
+      <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">My Data</a>
+            </div> -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right cl-effect-15">
+                    <li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
+                    <li><a class="page-scroll scroll" href="1.html">主页</a></li>
+                    <li><a class="page-scroll scroll" href="about.html">简介</a></li>
+                    <li><a class="page-scroll scroll" href="http://www.cqjtu.edu.cn/">交大</a></li>
+                    <li><a class="page-scroll scroll" href="http://civil.cqjtu.edu.cn/">土木学院</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">其他链接<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="page-scroll scroll" href="https://www.baidu.com/">百度</a></li>
+                            <li><a class="page-scroll scroll" href="https://www.bilibili.com/">哔哩哔哩</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a class="page-scroll scroll" href="#skills">skills</a></li>
+                    <li><a class="page-scroll scroll" href="#contact">Contact</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- //navigation -->
+    
+    <!-- banner -->
+    <section class="banner" id="home">
+        <div class="container">
+            <div class="col-md-5 banner-left">
+                <img src="img/p1.jpg" alt="" /> 
+            </div>
+            <div class="col-md-7 banner-right">
+                <h1>Hi, My name is </h1>
+                <span>Zeng Xinlun</span>
+                <i><h3>测绘1班</h3></i>
+                <hr>
+                <h2>春兰秋菊夏清风，三星望月挂夜空。</h2>
+                        <h2>不求独避风雨外，只笑桃源非梦中。</h2>
+
+            </div>
+            <!-- <div class="thim-click-to-bottom">
+                <a href="#about" class="scroll">
+                    <i class="fa  fa-chevron-down"></i>
+                </a>
+            </div> -->
+        </div>
+    </section>
+    <!-- //banner -->
+    
+    <!-- about -->
+    <div class="dorp">
+        <span id="span1" dir="ltr">小工具</span>  
+        <div class="dorp_con">
+<form id="form1">
+    <input type="button" value="现在时间" id="btn1" onclick="Get_Time()"> 
+    <a href="JSQ.html"><input type="button" value="计算器" id="btn2"></a>
+</form>      
+        </div>
+      </div>
+  <div class="ddd">
+    <img src="img/p6.gif" alt="" class="giff">    
+    <img src="img/p7.gif" alt="" class="giff">
+</div>
+</body>
+</html>

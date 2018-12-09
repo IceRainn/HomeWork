@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta charset="gb-2313" />
+<style type="text/css">
+select{
+    font-size: 30px;color: blueviolet;width:50px;height:30px;}    
+    #nu1{height: 30px;background-color: pink;font-size: 30px;}
+    #nu2{height: 30px;background-color: pink;font-size: 30px;}
+    #nu3{height: 30px;background-color: pink;font-size: 30px;}
+    #b1{height: 30px;background-color: palegreen;font-size: 20px;}
+    #b2{height: 30px;background-color: palegreen;font-size: 20px;}
+</style>
+<script>
+/* 
+    function message()
+    {
+      alert("ͨ��onload�¼�������Ϣ��")
+    }
+*/
+function jisuan()
+{
+  var n1=parseFloat(form1.num1.value);
+  var n2=parseFloat(form1.num2.value);
+ // var s=document.getElementById("s1");
+ // var s0=s.selecte
+ // var fs=s.option[index].value;
+ var fs=s1.value; 
+ var n3;
+ if(fs=="plus")
+  {
+      n3=n2+n1;
+  }
+ else if(fs=="minus")
+  {
+      n3=n1-n2;
+  }
+ else if(fs=="multiply")
+  {
+      n3=n1*n2;
+  }
+ else if(fs=="divide")
+  {
+      n3=n1/n2;
+  }
+ else if(fs=="mod")
+  {
+      n3=n1%n2;
+  }
+ else if(fs=="exponentiation")
+  {
+      n3=Math.pow(n1,n2);
+  }
+
+  form1.result.value=n3;
+
+/* document.write(n3);
+ document.getElementsByName("result").value=n3;
+*/
+}
+function get_time()
+{     
+    var curday=new Date();
+    hours=curday.getHours();
+    alert("�����ǣ�"+hours+"��");
+    if (hours<=12) 
+    {
+        alert("���Ϻã�");
+    }
+    else if (hours<=18)
+    {
+        alert("����ã�");
+    }
+    else  
+    {
+        alert("���Ϻã�");
+    }
+}
+
+</script>
+</head>
+<body>
+    <script> 
+        // document.write("hellow world");
+        // document.write("<h2>����</h2>");
+        // document.write("<p>����1</p>");
+        // document.write("<p>����2</p>");
+
+/*get_time();*/
+
+         /*  
+          var x=13,y=29;
+            function test()
+              {
+            var num;x;y=10;                     
+                   num=x+y;
+                   x++;
+                   document.write("�ڲ���num��ֵΪ��"+num+"<br/>");
+                 }
+        test();  
+          document.write("����x��ֵΪ��"+x+"<br/>");  
+          document.write("����y��ֵΪ��"+y+"<br/>");  
+          document.write("�ⲿ��num��ֵΪ��"+num+"<br/>");
+          
+          */
+    
+          
+       </script>
+      
+      <!-- <form>
+            <input type="button" onclick="get_time()" value="��ȡʱ��"/>
+        </form> -->
+    <form name="form1" id="f1">
+<input type="text" id="nu1" size="20" name="num1">
+<select name="���㷽ʽ" id="s1">
+    <option value="plus">+</option>
+    <option value="minus">-</option>
+    <option value="multiply">*</option>
+    <option value="divide">/</option>
+    <option value="mod">%</option>
+    <option value="exponentiation">^</option>
+</select>
+<input type="text" id="nu2" size="20" height="30px" name="num2">
+<input type="button" id="b1" value="计算" size="30px" onclick="jisuan()">
+<input type="text" id="nu3" size="20" height="30px" name="result">
+&nbsp;&nbsp;
+<input type="reset" id="b2" value="重置">
+  </form>
+
+</body>
+
+</html>
